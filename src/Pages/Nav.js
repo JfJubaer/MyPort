@@ -21,7 +21,7 @@ const Nav = () => {
                     </Link></li>
                     <li><a href="https://drive.google.com/file/d/13Yv8PhaCQML0jjf5Ah79lnecUOglgySS/view?usp=sharing"
                         target='_blank' rel='noreferrer'>Resume</a></li>
-                    <li><Link to={'/about'}>About</Link></li>
+                    <li><Link to={'/about'}>About Me</Link></li>
                 </ul>
             </div>
             <div className="flex-1">
@@ -50,7 +50,7 @@ const Nav = () => {
                             Projects
                         </Link>
                     </li>
-                    <li className='hidden md:block'><Link to={'/about'}>About</Link></li>
+                    <li className='hidden md:block'><Link to={'/about'}>About Me</Link></li>
 
                 </ul>
             </div>
