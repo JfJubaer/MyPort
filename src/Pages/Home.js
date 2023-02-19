@@ -3,32 +3,32 @@ require("@lottiefiles/lottie-player");
 
 const Home = () => {
     return (
-        <section class="container mx-auto dark:bg-gray-900">
-            <div class=" px-6 lg:px-32 py-10 mx-auto">
-                <div class="lg:mx-6 lg:flex lg:items-center">
-                    <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="https://i.ibb.co/JqSvYdB/25542589-1940074949642925-644966441285511474-o.jpg" alt="" />
+        <section id='me' className="container mx-auto dark:bg-gray-900">
+            <div className=" px-6 lg:px-32 py-10 mx-auto">
+                <div className="lg:mx-6 lg:flex lg:items-center">
+                    <img className="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="https://i.ibb.co/JqSvYdB/25542589-1940074949642925-644966441285511474-o.jpg" alt="" />
 
-                    <div class="mt-8 lg:w-9/12 lg:pl-20 lg:ml-20 lg:mt-0">
-                        <p class="text-5xl font-semibold text-blue-500 ">“</p>
+                    <div className="mt-8 lg:w-9/12 lg:pl-20 lg:ml-20 lg:mt-0">
+                        <p className="text-5xl font-semibold text-blue-500 ">“</p>
 
-                        <h1 class="text-2xl font-semibold  dark:text-white lg:text-5xl lg:w-96">
+                        <h1 className="text-2xl font-semibold  dark:text-white lg:text-5xl lg:w-96">
                             Hello It's <span className='text-indigo-700'>Jubaer</span>
                         </h1>
                         <h2 className='my-2 lg:text-2xl text-xl '>MERN stack web developer</h2>
 
-                        <p class="max-w-lg mt-6 text-xl text-gray-500 dark:text-gray-400 ">
+                        <p className="max-w-lg mt-6 text-xl text-gray-500 dark:text-gray-400 ">
                             “ I am a junior web developer. I have web developing skills on different technologies like react, express, node, mongo, javaScript, JWT, Tailwind, Bootstrap, firebase etc. I like to do my work on development and I never feel bored doing code. As Web development is a fast-paced, challenging career centered on creative problem-solving and continuous innovation, I would like to grow myself as a MERN stack Web developer.Currently I am studying in Hajee Mohammad Danesh Science And Technology University at Dinajpur Department of Electrical and Electronic Engineering faculty of Computer Science and Engineering.”
                         </p>
 
-                        <h3 class="mt-6 text-lg font-medium text-blue-500">From</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Panchagarh, Bangladesh.</p>
+                        <h3 className="mt-6 text-lg font-medium text-blue-500">From</h3>
+                        <p className="text-gray-600 dark:text-gray-300">Panchagarh, Bangladesh.</p>
 
-                        <div class="flex items-center justify-between mt-12 lg:justify-start">
+                        <div className="flex items-center justify-between mt-12 lg:justify-start">
                             <a href="https://drive.google.com/file/d/13Yv8PhaCQML0jjf5Ah79lnecUOglgySS/view?usp=sharing"
-                                target='_blank' rel='noreferrer' class="relative px-6 py-3 font-bold text-black group">
-                                <span class="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
-                                <span class="absolute inset-0 w-full h-full border-4 border-black"></span>
-                                <span class="relative">Resume</span>
+                                target='_blank' rel='noreferrer' className="relative px-6 py-3 font-bold text-black group">
+                                <span className="absolute inset-0 w-full h-full transition duration-300 ease-out transform -translate-x-2 -translate-y-2 bg-red-300 group-hover:translate-x-0 group-hover:translate-y-0"></span>
+                                <span className="absolute inset-0 w-full h-full border-4 border-black"></span>
+                                <span className="relative">Resume</span>
                             </a>
                         </div>
                     </div>

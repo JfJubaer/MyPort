@@ -1,47 +1,58 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { themeChange } from 'theme-change';
 
-
 const Nav = () => {
-
     useEffect(() => {
         themeChange(false)
     }, [])
     return (
-        <div className="navbar  shadow-2xl bg-indigo-100" style={{
-            overflow: 'hidden',
-            zIndex: '1',
-            position: 'fixed',
-            sticky: "top",
-            top: '0',
-            width: '100%',
-            opacity: .9
-        }}>
+        <div className="navbar  shadow-2xl  bg-indigo-100"
+            style={{
+                zIndex: '1',
+                position: 'fixed',
+                sticky: "top",
+                top: '0',
+                width: '100%',
+                opacity: .9
+            }}
+        >
             <div className="dropdown block md:hidden ">
                 <label tabIndex="0" className="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    <button ><svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg></button>
                 </label>
                 <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                    <li> <Link to='/projects'>
-                        Projects
-                    </Link></li>
                     <li><a href="https://drive.google.com/file/d/13Yv8PhaCQML0jjf5Ah79lnecUOglgySS/view?usp=sharing"
                         target='_blank' rel='noreferrer'>Resume</a></li>
-                    <li><Link to={'/about'}>About Me</Link></li>
+                    <li >
+                        <a href='#skills'>Skills</a>
+                    </li>
+                    <li >
+                        <a href='#achievement'>Achievements</a>
+                    </li>
+                    <li >
+                        <a href='#projects'>Projects</a>
+                    </li>
+                    <li >
+                        <a href='#mail'>Contact me</a>
+                    </li>
+                    <li>
+                        <a href='#me'>About Me</a>
+                    </li>
                 </ul>
             </div>
             <div className="flex-1">
 
-                <Link to='/' className="btn btn-ghost normal-case font-extrabold text-2xl ">
+                <a href='#me' className="btn btn-ghost normal-case font-extrabold text-2xl ">
                     <img className="w-10 mx-3 rounded-full " src="FB_IMG_1642859288462.jpg" alt="" />
-                    <span className='hidden md:block font-bold'>Md. Jubaer-Al-Imran Khan</span>
-                    <span className='block md:hidden font-semibold'>Jubaer</span>
-                </Link>
+
+                    <span className='hidden md:block font-bold text-black'>Md. Jubaer-Al-Imran Khan</span>
+                    <span className='block md:hidden font-semibold text-black'>Jubaer</span>
+                </a>
+
             </div>
             <div className="flex-none">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 text-black">
                     <li>
                         <label className="swap swap-rotate">
                             <input type="checkbox" />
@@ -50,17 +61,27 @@ const Nav = () => {
                         </label>
                     </li>
                     <li className='hidden md:block'>
-                        <a href="https://drive.google.com/file/d/13Yv8PhaCQML0jjf5Ah79lnecUOglgySS/view?usp=sharing"
+                        <a className='text-black' href="https://drive.google.com/file/d/13Yv8PhaCQML0jjf5Ah79lnecUOglgySS/view?usp=sharing"
                             target='_blank' rel='noreferrer'>Resume</a>
                     </li>
-                    <li className='hidden md:block'>
-                        <Link to={'/projects'}>
-                            Projects
-                        </Link>
+                    <li className='hidden md:block text-black'>
+                        <a href='#skills'>Skills</a>
                     </li>
-                    <li className='hidden md:block'><Link to={'/about'}>About Me</Link></li>
+                    <li className='hidden md:block text-black'>
+                        <a href='#achievement'>Achievements</a>
+                    </li>
+                    <li className='hidden md:block text-black'>
+                        <a href='#projects'>Projects</a>
+                    </li>
+                    <li className='hidden md:block text-black'>
+                        <a href='#mail'>Contact me</a>
+                    </li>
+                    <li className='hidden md:block text-black'>
+                        <a href='#me'>About Me</a>
+                    </li>
 
                 </ul>
+
             </div>
         </div>
     );

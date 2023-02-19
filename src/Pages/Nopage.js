@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 const Nopage = () => {
     return (
         <div>
-
             <div className="relative h-screen overflow-hidden bg-indigo-900">
                 <img src="https://i.pinimg.com/736x/a6/60/02/a6600229a75edcf160643dcf32531cd4.jpg" className="absolute object-cover w-full h-full" alt='' />
                 <div className="absolute inset-0 bg-black opacity-25">

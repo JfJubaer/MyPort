@@ -16,15 +16,15 @@ const Skills = () => {
         { name: 'Python', image: 'https://i.ibb.co/M2HddRn/768px-Python-svg.png' },
     ];
     return (
-        <div className='container mx-auto lg:my-32 my-10'>
-            <h1 className='text-5xl mt-10 text-center text-indigo-700'>My skills set</h1>
+        <div id='skills' className='container mx-auto lg:my-32 my-10'>
+            <h1 className='text-5xl mt-10 text-center font-light text-indigo-700'>My skills set</h1>
             <div className='grid lg:grid-cols-4 text-center mx-20 mt-10 gap-10'>
-                {skills.map((skill, i) => <div class="space-y-6">
-                    <div class="flex items-center gap-x-2">
-                        <img class="object-cover w-16 h-16 rounded-full" src={skill.image} alt="" />
+                {skills.map((skill, i) => <div className="space-y-6" key={i}>
+                    <div className="flex items-center gap-x-2">
+                        <img className="object-cover w-16 h-16 rounded-full" src={skill.image} alt="" />
 
                         <div>
-                            <h1 class="text-xl font-semibold capitalize dark:text-white">{skill.name}</h1>
+                            <h1 className="text-xl font-semibold capitalize dark:text-white">{skill.name}</h1>
                         </div>
                     </div>
                 </div>)}

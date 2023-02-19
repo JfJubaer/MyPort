@@ -28,19 +28,18 @@ const Projects = () => {
             details: "Learn about different programming language",
             link: "https://soft-meerkat-db4ceb.netlify.app/",
             picture: "https://i.ibb.co/nRbzsyy/Screenshot-2023-02-19-234543.png",
-
         },
     ]
     return (
-        <div className='mt-20 container mx-auto'>
+        <div id='projects' className='mt-32 container mx-auto'>
             <div className="relative  flex items-center mx-auto">
                 <div className="container relative flex flex-col items-center justify-between px-6 py-8 mx-auto">
                     <div className="flex flex-col">
-                        <h1 className="w-full text-4xl font-light text-center text-indigo-700 uppercase sm:text-5xl">
+                        <h1 className="w-full text-5xl font-light text-center text-indigo-700 uppercase sm:text-5xl">
                             Welcome to my projects
                         </h1>
                         <h2 className="w-full max-w-2xl py-8 mx-auto text-xl font-light text-center  dark:text-white">
-                            I have done this works through react,node,mongo,express,firebase as i am a MERN focused web developer.
+                            I have done this works through react,node,mongo,express,firebase,jwt etc. as I am a MERN focused web developer.
                         </h2>
                     </div>
                 </div>
