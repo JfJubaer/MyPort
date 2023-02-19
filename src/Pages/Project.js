@@ -4,7 +4,7 @@ import React from 'react';
 const Project = ({ p }) => {
     const { name, link, picture, details } = p;
     return (
-        <div className="items-center lg:ml-36 w-full mt-10 max-w-sm overflow-hidden  rounded-lg shadow-lg dark:bg-gray-800">
+        <div className="items-center mx-2 lg:ml-36 w-full mt-10 max-w-sm overflow-hidden  rounded-lg shadow-lg dark:bg-gray-800">
             <img className="object-cover object-center w-full h-56" src={picture} alt="avatar" />
 
             <div className="flex items-center px-6 py-3 bg-gray-900">

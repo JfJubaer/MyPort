@@ -10,16 +10,16 @@ const Nav = () => {
         themeChange(false)
     }, [])
     return (
-        <div className="navbar bg-base-100 shadow-2xl" style={{
+        <div className="navbar  shadow-2xl bg-indigo-100" style={{
             overflow: 'hidden',
             zIndex: '1',
             position: 'fixed',
             sticky: "top",
             top: '0',
             width: '100%',
-            opacity: 1
+            opacity: .9
         }}>
-            <div className="dropdown block md:hidden">
+            <div className="dropdown block md:hidden ">
                 <label tabIndex="0" className="btn btn-ghost btn-circle">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
@@ -36,8 +36,8 @@ const Nav = () => {
 
                 <Link to='/' className="btn btn-ghost normal-case font-extrabold text-2xl ">
                     <img className="w-10 mx-3 rounded-full " src="FB_IMG_1642859288462.jpg" alt="" />
-                    <span className='hidden md:block'>Md. Jubaer-Al-Imran Khan</span>
-                    <span className='block md:hidden'>Jubaer</span>
+                    <span className='hidden md:block font-bold'>Md. Jubaer-Al-Imran Khan</span>
+                    <span className='block md:hidden font-semibold'>Jubaer</span>
                 </Link>
             </div>
             <div className="flex-none">

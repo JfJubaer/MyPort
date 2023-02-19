@@ -12,18 +12,16 @@ const Home = () => {
                         <p class="text-5xl font-semibold text-blue-500 ">“</p>
 
                         <h1 class="text-2xl font-semibold  dark:text-white lg:text-5xl lg:w-96">
-                            Hello It's Jubaer
+                            Hello It's <span className='text-indigo-700'>Jubaer</span>
                         </h1>
                         <h2 className='my-2 lg:text-2xl text-xl '>MERN stack web developer</h2>
 
                         <p class="max-w-lg mt-6 text-xl text-gray-500 dark:text-gray-400 ">
-                            “ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus libero ad
-                            tempora doloribus expedita laborum saepe voluptas perferendis delectus assumenda rerum, culpa
-                            aperiam dolorum, obcaecati corrupti aspernatur a. ”
+                            “ I am a junior web developer. I have web developing skills on different technologies like react, express, node, mongo, javaScript, JWT, Tailwind, Bootstrap, firebase etc. I like to do my work on development and I never feel bored doing code. As Web development is a fast-paced, challenging career centered on creative problem-solving and continuous innovation, I would like to grow myself as a MERN stack Web developer.Currently I am studying in Hajee Mohammad Danesh Science And Technology University at Dinajpur Department of Electrical and Electronic Engineering faculty of Computer Science and Engineering.”
                         </p>
 
-                        <h3 class="mt-6 text-lg font-medium text-blue-500">Mia Brown</h3>
-                        <p class="text-gray-600 dark:text-gray-300">Marketing Manager at Stech</p>
+                        <h3 class="mt-6 text-lg font-medium text-blue-500">From</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Panchagarh, Bangladesh.</p>
 
                         <div class="flex items-center justify-between mt-12 lg:justify-start">
                             <a href="https://drive.google.com/file/d/13Yv8PhaCQML0jjf5Ah79lnecUOglgySS/view?usp=sharing"

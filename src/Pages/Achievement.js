@@ -3,7 +3,7 @@ import React from 'react';
 const Achievement = () => {
     return (
         <header class=" dark:bg-gray-900">
-            <h1 className='text-5xl my-20 text-center'>My Achievements</h1>
+            <h1 className='text-5xl my-20 text-center text-indigo-700'>My Achievements</h1>
             <div class="container flex flex-col px-6 py-4 mx-auto space-y-6 lg:h-[32rem] lg:py-16 lg:flex-row lg:items-center">
                 <div class="flex flex-col items-center w-full lg:flex-row lg:w-1/2">
                     <div class="max-w-lg lg:mx-12 lg:order-2">

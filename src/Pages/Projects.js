@@ -36,7 +36,7 @@ const Projects = () => {
             <div className="relative  flex items-center mx-auto">
                 <div className="container relative flex flex-col items-center justify-between px-6 py-8 mx-auto">
                     <div className="flex flex-col">
-                        <h1 className="w-full text-4xl font-light text-center text-indigo-600 uppercase sm:text-5xl">
+                        <h1 className="w-full text-4xl font-light text-center text-indigo-700 uppercase sm:text-5xl">
                             Welcome to my projects
                         </h1>
                         <h2 className="w-full max-w-2xl py-8 mx-auto text-xl font-light text-center  dark:text-white">

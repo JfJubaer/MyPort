@@ -20,38 +20,37 @@ const Contact = () => {
         toast.success('Successfully sent');
     }
     return (
+        <div className='my-20'>
+            <h1 className="mb-5 text-5xl font-bold text-center text-indigo-700">If you want to contact me jump here ...</h1>
+            <div className="hero-content mt-10 flex-col mx-auto lg:flex-row-reverse">
+                <div>
+                    <div className='mx-auto'>
+                        <lottie-player
+                            autoplay
+                            loop
+                            mode="normal"
+                            src="https://assets10.lottiefiles.com/packages/lf20_ipd377dh.json"
+                            style={{ width: "400px", height: "500px" }}
+                        ></lottie-player>
+                    </div>
+                </div>
+                <div className="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100 lg:mr-10">
+                    <div className="card-body">
+                        <form ref={form} className="contact-form " onSubmit={sendEmail}>
+                            <label className="label">Name</label>
+                            <input className="input input-bordered w-80" placeholder='Name' type="text" name="user_name" /><br />
+                            <label className="label">Email</label>
+                            <input className="input input-bordered w-80" placeholder='Email' type="email" name="from_email" /><br />
+                            <label className="label">Subject</label>
+                            <input className="input input-bordered w-80" placeholder='Subject' type="text" name="subject" /><br />
+                            <label className="label">Message</label>
+                            <textarea className="input input-bordered w-80" placeholder='Message' name="message" /><br />
+                            <input className="btn btn-primary" type="submit" value="Send" />
 
-
-        <div className="hero-content flex-col lg:flex-row-reverse">
-            <div>
-                <div className='mx-auto'>
-                    <lottie-player
-                        autoplay
-                        loop
-                        mode="normal"
-                        src="https://assets10.lottiefiles.com/packages/lf20_ipd377dh.json"
-                        style={{ width: "400px", height: "500px" }}
-                    ></lottie-player>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 lg:mr-10">
-                <div className="card-body">
-                    <h1 className="mb-5 text-5xl font-bold">If you want to contact me jump here ...</h1>
-                    <form ref={form} className="contact-form " onSubmit={sendEmail}>
-                        <label className="label">Name</label>
-                        <input className="input input-bordered w-60" type="text" name="user_name" /><br />
-                        <label className="label">Email</label>
-                        <input className="input input-bordered w-60" type="email" name="from_email" /><br />
-                        <label className="label">Subject</label>
-                        <input className="input input-bordered w-60" type="text" name="subject" /><br />
-                        <label className="label">Message</label>
-                        <textarea className="input input-bordered h-40 w-60" name="message" /><br />
-                        <input className="btn btn-primary" type="submit" value="Send" />
-                    </form>
-                </div>
-            </div>
-
-
         </div>
     );
 };

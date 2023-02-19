@@ -2,7 +2,6 @@
 import { Toaster } from 'react-hot-toast';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import About from './Pages/About';
 import Home from './Pages/Home';
 import Main from './Pages/Main';
 import Nopage from './Pages/Nopage';
@@ -19,10 +18,7 @@ function App() {
           path: '/',
           element: <Home></Home>
         },
-        {
-          path: '/about',
-          element: <About></About>
-        },
+
 
         {
           path: '/projects',

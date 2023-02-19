@@ -17,7 +17,7 @@ const Skills = () => {
     ];
     return (
         <div className='container mx-auto lg:my-32 my-10'>
-            <h1 className='text-5xl mt-10 text-center'>My skills set</h1>
+            <h1 className='text-5xl mt-10 text-center text-indigo-700'>My skills set</h1>
             <div className='grid lg:grid-cols-4 text-center mx-20 mt-10 gap-10'>
                 {skills.map((skill, i) => <div class="space-y-6">
                     <div class="flex items-center gap-x-2">

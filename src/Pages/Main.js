@@ -19,7 +19,6 @@ const Main = () => {
                 <Contact></Contact>
                 <Footer></Footer>
             </div>
-
         </div>
     );
 };
